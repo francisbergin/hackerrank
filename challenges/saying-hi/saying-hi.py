@@ -1,3 +1,4 @@
+#!/usr/bin/env python2
 
 N = int(raw_input())
 

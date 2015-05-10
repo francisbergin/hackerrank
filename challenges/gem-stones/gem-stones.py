@@ -1,3 +1,4 @@
+#!/usr/bin/env python2
 
 summ = []
 for i in range(26):

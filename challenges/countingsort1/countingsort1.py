@@ -1,3 +1,4 @@
+#!/usr/bin/env python2
 
 T = int(raw_input())
 
@@ -11,6 +12,6 @@ for i in range(100):
 
 for a in range(0, T):
 	val[n[a]] += 1
-	
+
 for i in range(100):
 	print val[i],

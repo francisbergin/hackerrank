@@ -1,13 +1,15 @@
+#!/usr/bin/env python2
+
 if __name__=="__main__":
 	N = raw_input()
 	N,T = N.split()
 	N = int(N)
 	T = int(T)
-	
+
 	W = raw_input()
 	W = W.split()
 	W = map(int, W)
-	
+
 	for i in range(0, T):
 		i = raw_input()
 		i,j = i.split()
