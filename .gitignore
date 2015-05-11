@@ -3,3 +3,6 @@
 
 # ignore testcase files
 testcase.*
+
+# ignore in progress files
+ip.*
