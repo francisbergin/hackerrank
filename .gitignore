@@ -2,7 +2,7 @@
 *.out
 
 # ignore testcase files
-testcase.*
+tc.*
 
 # ignore in progress files
 ip.*
