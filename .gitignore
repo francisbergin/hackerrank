@@ -1,8 +1,12 @@
-# C and C++ executables
+# C++ executables
 *.out
 
-# ignore testcase files
+# Haskell interface and object files
+*.hi
+*.o
+
+# testcase files
 tc.*
 
-# ignore in progress files
+# in progress files
 ip.*
