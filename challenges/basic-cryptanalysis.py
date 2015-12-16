@@ -20,7 +20,7 @@ for ct in sorted(ciphertext, key=lambda k: len(k), reverse=True):
         char_occ_dt = [[i for i, ltr in enumerate(dt) if ltr == c] for c in dt]
         if not char_occ_ct == char_occ_dt:
             continue
-        mapping_tmp = dict(zip(ct, dt))
+        mapping_tmp = str.maketrans(ct, dt)
         if not non_coliding_dicts(mapping, mapping_tmp):
             continue
         mappings_tmp.append(mapping_tmp)
@@ -29,7 +29,4 @@ for ct in sorted(ciphertext, key=lambda k: len(k), reverse=True):
     if len(mapping) == ciphertext_len:
         break
 
-for ct in ciphertext:
-    for c in ct:
-        print(mapping[c], end='')
-    print(' ', end='')
+print(' '.join(ciphertext).translate(mapping))
