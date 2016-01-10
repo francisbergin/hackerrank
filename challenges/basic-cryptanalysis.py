@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 def non_coliding_dicts(dict1, dict2):
     for k in dict1:
         if k in dict2:
